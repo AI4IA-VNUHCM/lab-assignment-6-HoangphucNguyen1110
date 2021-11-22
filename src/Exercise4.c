@@ -16,15 +16,12 @@ Ex:
 void Ex4(char *str){
 	//Your codes here
 	int j=0,i=0;
-	char b[100];
-	printf("input: ");
-	gets(str);
-	
-	while (str[i] !='\0')
+	char a[100],b[100];
+		while (a[i] !='\0')
 	{
-		if ( !(str[i]==' '&& str[i+1] ==' '))
+		if ( !(a[i]==' '&& a[i+1] ==' '))
 			{
-			b[j]=str[i];
+			b[j]=a[i];
 			j++;
 		}
 		i++;
