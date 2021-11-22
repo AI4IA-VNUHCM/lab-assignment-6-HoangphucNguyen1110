@@ -15,7 +15,22 @@ Ex:
 
 void Ex4(char *str){
 	//Your codes here
+	int j=0,i=0;
+	char b[100];
+	printf("input: ");
+	gets(str);
 	
+	while (str[i] !='\0')
+	{
+		if ( !(str[i]==' '&& str[i+1] ==' '))
+			{
+			b[j]=str[i];
+			j++;
+		}
+		i++;
+	}
+	b[j]='\0';
+	printf("Output: %s ",b);
 }
 
 int main(int argc, char *argv[]) {
