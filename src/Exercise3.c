@@ -17,13 +17,11 @@ void Ex3(char *str){
 	//Your codes here
 	int i,j=0,k=0;
  	int a[15],max1,min1;
+	 char temp[155];
  	char str1[15][25];
- 	printf("Input: ");
- 	gets(str);
- 	
- 	for ( i=0;str[i]!= '\0';i++){
+ 	for ( i=0;temp[i]!= '\0';i++){
  		
- 		if(str[i]==32){
+ 		if(temp[i]==32){
  			
 			 str1[k][j]='\0';
  				k++;
@@ -31,7 +29,7 @@ void Ex3(char *str){
 		 }
 	
 		 else{
-		 	str1[k][j]=str[i];
+		 	str1[k][j]=temp[i];
 		 	j++;
 		 }
 	 }
@@ -49,11 +47,11 @@ void Ex3(char *str){
 	 	min1=a[i];
 	 }
 	 for (i=0;i<=k;i++){
-	 	if(strlen(str1[i])== max1){
-	 		printf("Longest Word: %s \n",str1[i]);
-		 }
 		 	if(strlen(str1[i])== min1){
-	 		printf("shortest Word: %s \n",str1[i]);
+	 		printf("Shortest Word: %s \n",str1[i]);
+		 }
+		 if(strlen(str1[i])== max1){
+	 		printf("Longest Word: %s \n",str1[i]);
 		 }
 	 }
 }
