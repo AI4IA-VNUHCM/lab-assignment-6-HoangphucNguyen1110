@@ -22,7 +22,6 @@ void Ex3(char *str){
  	for ( i=0;temp[i]!= '\0';i++){
  		
  		if(temp[i]==32){
- 			
 			 str1[k][j]='\0';
  				k++;
  				j=0;
@@ -48,10 +47,10 @@ void Ex3(char *str){
 	 }
 	 for (i=0;i<=k;i++){
 		 	if(strlen(str1[i])== min1){
-	 		printf("Shortest Word: %s \n",str1[i]);
+	 		printf("Shortest word: %s \n",str1[i]);
 		 }
 		 if(strlen(str1[i])== max1){
-	 		printf("Longest Word: %s \n",str1[i]);
+	 		printf("Longest word: %s \n",str1[i]);
 		 }
 	 }
 }
